@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-shades:hover {
+  background-color: #0a233d;
+  color: white;
+}
+
+.price-table,
+.promo {
+  width: 50%;
+}

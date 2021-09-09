@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mac Book Pro" />
+    <meta name="keywords" content="Mac, Book, Pro" />
+    <meta name="author" content="Md. Rifat Islam" />
+    <title>Mac Book Pro</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="" type="image/gif" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custome CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <!-- Main -->
+    <main class="container py-5">
+      <!-- MacBook -->
+      <div class="row row-cols-1 row-cols-md-2 g-1">
+        <!-- MacBook Photo -->
+        <div class="col-md-6 col-sm-12 col-lg-5">
+          <div class="card border-0">
+            <img
+              src="images/mac.png"
+              class="card-img-top w-75 m-auto"
+              alt="MacBook"
+            />
+          </div>
+        </div>
+
+        <!-- MacBook specifications -->
+        <div class="col-md-6 col-sm-12 col-lg-7">
+          <div class="card border-0">
+            <div class="card-body">
+              <!--Title -->
+              <h1 class="card-title">
+                Customize your Blue 24‑inch iMac with Apple M1 chip.
+              </h1>
+
+              <!-- Description -->
+              <p class="card-text pt-2" style="text-align: justify">
+                Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB
+                unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports
+                Magic Mouse Magic Keyboard - US English
+              </p>
+
+              <!-- Memory option-->
+              <div class="pt-4 memory">
+                <h6>Memory</h6>
+                <button type="button" class="btn mb-2 btn-shades border">
+                  8GB unified memory
+                </button>
+                <button type="button" class="btn mb-2 btn-shades border">
+                  16GB unified memory
+                </button>
+              </div>
+
+              <!-- Storage option-->
+              <div class="pt-4 storage">
+                <h6>Storage</h6>
+                <button type="button" class="btn mb-2 btn-shades border">
+                  256GB SSD storage
+                </button>
+                <button type="button" class="btn mb-2 btn-shades border">
+                  512GB SSD storage
+                </button>
+                <button type="button" class="btn mb-2 btn-shades border">
+                  1TB SSD storage
+                </button>
+              </div>
+
+              <!-- Delivery option-->
+              <div class="pt-4 delivery">
+                <h6>Choose your delivery option</h6>
+                <button type="button" class="btn mb-2 btn-shades border">
+                  Friday, Aug 25 FREE Prime Delivery
+                </button>
+                <button type="button" class="btn mb-2 btn-shades border">
+                  Friday, Aug 21 Delivery charge $20
+                </button>
+              </div>
+
+              <!-- price Table -->
+              <div class="pt-4 price-table">
+                <table class="table">
+                  <!-- price Details -->
+                  <tbody>
+                    <tr>
+                      <th scope="row">Best Price</th>
+                      <td class="fw-bold">
+                        $<span id="best-price">1299</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Extra Memory Cost</th>
+                      <td class="fw-bold">$<span id="memory-cost">0</span></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Extra Storage Cost</th>
+                      <td class="fw-bold">$<span id="storage-cost">0</span></td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">Delivery charge</th>
+                      <td class="fw-bold">
+                        $<span id="delivery-charge">0</span>
+                      </td>
+                    </tr>
+                  </tbody>
+
+                  <!-- Total Price -->
+                  <tfoot>
+                    <th scope="row">Total Price</th>
+                    <td class="fw-bold">
+                      $<span class="total-price">1299</span>
+                    </td>
+                  </tfoot>
+                </table>
+              </div>
+
+              <!-- Promo Code -->
+              <div class="pt-4 promo">
+                <h6>Add Promo code</h6>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="promo-code" />
+                  <button class="btn btn-danger">Apply</button>
+                </div>
+                <!-- error message -->
+                <div class="">
+                  <h5
+                    class="text-center mb-0 mt-2"
+                    id="success-Message"
+                    style="color: green; display: inline-block"
+                  ></h5>
+                  <h5
+                    class="text-center mb-0 mt-2"
+                    id="error-Message"
+                    style="color: red; display: inline-block"
+                  ></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Total -->
+      <div>
+        <hr />
+        <h1 class="text-center mb-0">
+          Total: $<span class="total-price">1299</span>
+        </h1>
+      </div>
+    </main>
+
+    <!-- External Scripts -->
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
